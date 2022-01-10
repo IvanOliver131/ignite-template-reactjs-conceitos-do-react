@@ -68,7 +68,8 @@ export function TaskList() {
     // Remova uma task da listagem pelo ID
     // O filter remove a task que não cumpre a condição passada
     const filteredTasks = tasks.filter(task => task.id !== id);
-  
+    
+    // Você coloca o valor em uma constante e dps manda ela no set
     setTasks(filteredTasks);
   }
 
